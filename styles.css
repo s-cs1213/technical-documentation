@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.main-section {
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding: 10px 20px;
+}
+
+#navbar {
+    width: 20%;
+    position: fixed;
+}
+
+#navbar header {
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-bottom: 2px solid black;
+}
+
+#navbar p {
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-left: transparent;
+    border-right: transparent;
+    padding: 6px;
+}
+
+#navbar a {
+    width: 20%;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar a:hover {
+    color: navy;
+    font-weight: bold;
+}
+
+#navbar a>p:hover {
+    background-color: lightblue;
+}
+
+
+#main-doc {
+    width: 80%;
+    margin-left: 20%;
+    border-left: 2px solid black;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.section-head {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 9px 0;
+}
+
+.sub-head {
+    font-weight: bold;
+    font-size: 1.325rem;
+    font-style: italic;
+    padding: 9px 0;
+}
+
+.code-head {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.code-snippet {
+    display: block;
+    padding: 9px;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: lightblue;
+}
+
+.code-para {
+    font-weight: bold;
+    font-family: "Consolas";
+    color: blue;
+}
+
+li,
+p {
+    padding: 5px 0;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+@media (max-width: 1112px) {
+    #navbar {
+        width: 100%;
+        display: block;
+        position: relative;
+    }
+
+    #main-doc {
+        width: 100%;
+        margin: 0;
+    }
+}
